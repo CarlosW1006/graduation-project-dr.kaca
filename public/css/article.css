@@ -1,0 +1,83 @@
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+.title{
+    margin-top: 10px;
+    padding-bottom: 30px;
+    color: #9ECDCA;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 0%;
+}
+
+@media (max-width: 600px){
+    .title{
+        margin-top: 5px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 33px;
+        text-align: center;
+        margin-left: 10%;
+    }
+}
+
+.container{
+    padding-top: 135px;
+    padding-bottom: 55px;
+    position: relative;
+    width: 750px;
+}
+
+@media (max-width: 600px){
+    .container{
+        padding-top: 135px;
+        padding-bottom: 15px;
+        position: relative;
+        width: 360px;
+    }
+}
+
+.about_text{
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px){
+    .about_text{
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+html, body{
+    height: 100%;
+}
+
+footer{
+    background-color: #9ECDCA;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.text_footer{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.c5_title{
+    font-weight: bold;
+    font-size: 25px;
+    display: inline;
+}
+
+.c5_date{
+    font-size: 10px;
+    padding-top: 10px;
+    color: dimgray;
+
+}

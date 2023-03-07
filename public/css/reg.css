@@ -1,0 +1,245 @@
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about_text{
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px){
+    .about_text{
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    h3{
+        margin-top: 15px;
+        font-size: 24px;
+    }
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #9ECDCA;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.text_footer{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: auto;
+    background: #fff;   
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: center;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 600px){
+    .container{
+        position: relative;
+        max-width: 430px;
+        width: auto;
+        background: #fff;   
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 20px;
+        margin-top: 160px;
+        margin-bottom: 50px;
+    }
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 680px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms{
+    height: 750px;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    color: #9ECDCA;
+}
+
+/* 標題底線 */
+/* .form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #9ECDCA;
+    border-radius: 25px;
+} */
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* 欄位樣式 */
+.input-field input{
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* 欄位圖示 */
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}
+
+/* 欄位圖示顯色 */
+.input-field input:is(:focus, :valid) ~ i{
+    color: #9ECDCA;
+}
+
+/* 欄位底線顯色 */
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #9ECDCA;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* .form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+} */
+
+/* .checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+} */
+
+/* .checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #9ECDCA;
+} */
+
+.form .text{
+    color: #333;
+    font-size: 16px;
+}
+
+.form a.text{
+    color: #9ECDCA;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #9ECDCA;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #41c6bd;
+}
+
+.form .login-signup{
+    margin-top: 40px;
+    text-align: center;
+}

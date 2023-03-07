@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. kācā 機智小專家</title>
+        <meta charset="UTF-8">
+        <!-- 響應式網站 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Boostrap5.0 導入程式 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="image/機智小專家logo5.png" type="">
+        <!-- ===== Iconscout CSS ===== -->
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/self.css">
+        <!-- Include outcome.js, which defines our own functions -->
+        <script src="./js/self.js"  type="module"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="front.html"><img width="130px" height="56px" src="image/機智小專家logo6.png"></a>
+
+                <!-- 手機板 -->
+                <button class="navbar-toggler" type="butten" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                
+                <!-- 桌上型電腦 -->
+                <div class="collapse navbar-collapse" id="linkbar">
+                    <div class="navv">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="front.html">關於Dr. kācā</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="howuse.html">如何操作</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="analysis.html">傷口分析</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">附近院所</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="chatplatform.html?themeid=4vgBxENvZOyWcthPQoba">使用者論壇</a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="self" href="self.html">會員資料</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logreg" href="login.html">登入/註冊</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout" href="login.html">登出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <center><div class="title">會員資料</div></center>
+                    
+                    <span style="color: #9ECDCA; font-weight: bold;">會員ID：</span> &nbsp;&nbsp;&nbsp;
+                    <div class="fontsize"><span id="uid"></span></div><br>
+
+                    <span style="color: #9ECDCA; font-weight: bold;">會員帳號：</span>
+                    <span id="email"></span><br><br>
+
+                    <span style="color: #9ECDCA; font-weight: bold;">姓名：</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="name" placeholder="請輸入姓名" style="width: 260px;"><br><br>
+
+                    <span style="color: #9ECDCA; font-weight: bold;">性別：</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="sex" style="width: 260px; height: 38px;">
+                        <option>男性</option>
+                        <option>女性</option>
+                        <option>其他</option>
+                    </select><br><br>
+
+                    <span style="color: #9ECDCA; font-weight: bold;">出生日期：</span>
+                    <input id="birth" placeholder="請輸入出生日期" style="width: 260px;"><br><br>
+
+                    <span style="color: #9ECDCA; font-weight: bold;">慢性疾病：</span>
+                    <select id="disease" style="width: 260px; height: 38px;">
+                        <option>null</option>
+                        <option>肺炎</option>
+                        <option>腦血管疾病</option>
+                        <option>糖尿病</option>
+                        <option>慢性下呼吸道疾病</option>
+                        <option>高血壓性疾病</option>
+                        <option>腎炎腎病症候群及腎病變</option>
+                        <option>慢性肝病及肝硬化</option>
+                    </select>
+
+                    <div class="input-field button">
+                        <a href="record.html"><input id="change" type="button" value="分析紀錄"></a>
+                    </div>
+                    <div class="input-field button">
+                        <a href="changepwd.html"><input id="change" type="button" value="變更密碼"></a>
+                    </div>
+                    <div class="input-field button">
+                        <input id="save" type="button" value="儲存變更">
+                    </div>
+                    <div class="input-field button">
+                        <input id="delete" type="button" value="刪除帳號">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                <a class="text_footer" href="#">
+                    © 2022 Copyright：Dr. kācā.com
+                </a>
+            </div>
+        </footer>
+    </body>    
+</html>

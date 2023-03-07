@@ -1,0 +1,72 @@
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container{
+    padding-top: 175px;
+    position: relative;
+}
+
+.about_text{
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px){
+    .about_text{
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #9ECDCA;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    footer{
+        background-color: #9ECDCA;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.text_footer{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.carousel{
+    margin-bottom: 65px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}

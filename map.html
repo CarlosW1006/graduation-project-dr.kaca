@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. kācā 機智小專家</title>
+        <meta charset="UTF-8">
+        <!-- 響應式網站 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Boostrap5.0 導入程式 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="image/機智小專家logo5.png" type="">
+        <!-- ===== Iconscout CSS ===== -->
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/map.css">
+        <!-- Include map.js, which defines our own functions -->
+        <script src="./js/map.js"  type="module"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAZtdHg1xb3sR359s2tb1c8kaSDKztYvYs" defer></script>
+
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // Latitude and longitude of the selected location
+                const myLatLng1 = { lat:24.95439994923928, lng:121.23862828221397 };
+            
+                // The map, centered at selected location
+                const map = new google.maps.Map(document.getElementById("mapCanvas"), {
+                    zoom: 15,
+                    center: myLatLng1
+                });
+                
+                // Info window content
+                var contentString1 =
+                '<h5 style="font-size:15px;">德美診所</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區中山東路二段43號</h6>';
+                         
+                // Add info window
+                const infowindow = new google.maps.InfoWindow({
+                    content: contentString1
+                });
+                
+                // The marker, positioned at selected location
+                const marker1 = new google.maps.Marker({
+                    position: myLatLng1,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+            
+                // Marker click event: open info window
+                google.maps.event.addListener(marker1, 'click', function() {
+                    infowindow.open(map, marker1);
+                });
+            
+                // Open info window on load
+                infowindow.open(map, marker1);
+
+                google.maps.event.addListener(marker1, 'click', function() {
+                    infowindow.open(map, marker1);
+                });
+            
+                // Open info window on load
+                infowindow.open(map, marker1);
+                
+                // 2.
+                const myLatLng2 = { lat:24.956923078942225, lng:121.23857647021113 };
+
+                var contentString2 =
+                '<h5 style="font-size:15px;">宜芙醫美診所</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區中北路111號3樓</h6>';
+                
+                const infowindow2 = new google.maps.InfoWindow({
+                content: contentString2
+                });
+
+                const marker2 = new google.maps.Marker({
+                    position: myLatLng2,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker2, 'click', function() {
+                    infowindow1.open(map, marker2);
+                });
+            
+                infowindow2.open(map, marker2);
+
+                // 3.
+                const myLatLng3 = { lat:24.962884199824764, lng:121.22906056138208 };
+
+                var contentString3 =
+                '<h5 style="font-size:15px;">天晟醫院</h5>'+
+                '<h6 style="font-size:13px;">320桃園縣中壢市延平路155號</h6>';
+                
+                const infowindow3 = new google.maps.InfoWindow({
+                content: contentString3
+                });
+
+                const marker3 = new google.maps.Marker({
+                    position: myLatLng3,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker3, 'click', function() {
+                    infowindow3.open(map, marker3);
+                });
+            
+                infowindow3.open(map, marker3);
+
+                // 4.
+                const myLatLng4 = { lat:24.958812041161856, lng:121.22816348132667 };
+
+                var contentString4 =
+                '<h5 style="font-size:15px;">張皮膚科診所</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區元化路107號</h6>';
+                
+                const infowindow4 = new google.maps.InfoWindow({
+                content: contentString4
+                });
+
+                const marker4 = new google.maps.Marker({
+                    position: myLatLng4,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker4, 'click', function() {
+                    infowindow4.open(map, marker4);
+                });
+            
+                infowindow4.open(map, marker4);
+
+                // 5.
+                const myLatLng5 = { lat:24.95753325889322, lng:121.22573838132675 };
+
+                var contentString5 =
+                '<h5 style="font-size:15px;">洛淳皮膚科診所</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區中光路11號</h6>';
+                
+                const infowindow5 = new google.maps.InfoWindow({
+                content: contentString5
+                });
+
+                const marker5 = new google.maps.Marker({
+                    position: myLatLng5,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker5, 'click', function() {
+                    infowindow5.open(map, marker5);
+                });
+            
+                infowindow5.open(map, marker5);
+
+                // 6.
+                const myLatLng6 = { lat:24.95597033922111, lng:121.23062404643156 };
+
+                var contentString6 =
+                '<h5 style="font-size:15px;">米樂皮膚診所</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區中光路43號</h6>';
+                
+                const infowindow6 = new google.maps.InfoWindow({
+                content: contentString6
+                });
+
+                const marker6 = new google.maps.Marker({
+                    position: myLatLng6,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker6, 'click', function() {
+                    infowindow6.open(map, marker6);
+                });
+            
+                infowindow6.open(map, marker6);
+
+                // 7.
+                const myLatLng7 = { lat:24.959219043681728, lng:121.24216441201791 };
+
+                var contentString7 =
+                '<h5 style="font-size:15px;">中原大學衛保組</h5>'+
+                '<h6 style="font-size:13px;">320桃園市中壢區新中北路372號</h6>';
+                
+                const infowindow7 = new google.maps.InfoWindow({
+                content: contentString7
+                });
+
+                const marker7 = new google.maps.Marker({
+                    position: myLatLng7,
+                    icon: 'image/Dr._kaca.png',
+                    map: map,
+                    title: 'Dr. kācā 機智小專家'
+                });
+
+                google.maps.event.addListener(marker7, 'click', function() {
+                    infowindow7.open(map, marker7);
+                });
+            
+                infowindow7.open(map, marker7);
+
+                window.initMap = initMap;
+            }
+            </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="front.html"><img width="130px" height="56px" src="image/機智小專家logo6.png"></a>
+
+                <!-- 手機板 -->
+                <button class="navbar-toggler" type="butten" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                
+                <!-- 桌上型電腦 -->
+                <div class="collapse navbar-collapse" id="linkbar">
+                    <div class="navv">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="front.html">關於Dr. kācā</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="howuse.html">如何操作</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="analysis.html">傷口分析</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">附近院所</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="chatplatform.html?themeid=4vgBxENvZOyWcthPQoba">使用者論壇</a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="self" href="self.html">會員資料</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logreg" href="login.html">登入/註冊</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout" href="login.html">登出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mapp">
+            <center><div class="title">附近院所</div> &nbsp;
+            <img src="image/google-maps.png" type="button" style="width: 33px; margin-bottom: 15px;"></center>
+            <center><div id="mapCanvas"></div></center>
+        </div>
+
+        <footer class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                <a class="text_footer" href="#">
+                    © 2022 Copyright：Dr. kācā.com
+                </a>
+            </div>
+        </footer>
+    </body>    
+</html>

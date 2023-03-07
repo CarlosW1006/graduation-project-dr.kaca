@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. kācā 機智小專家</title>
+        <meta charset="UTF-8">
+        <!-- 響應式網站 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Boostrap5.0 導入程式 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--iconscout css-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="image/機智小專家logo5.png" type="">
+        <!-- ===== Iconscout CSS ===== -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/reg.css">
+        <!-- Include reg.js, which defines our own functions -->
+        <script src="./js/reg.js" type="module"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="front.html"><img width="130px" height="56px" src="image/機智小專家logo6.png"></a>
+
+                <!-- 手機板 -->
+                <button class="navbar-toggler" type="butten" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                
+                <!-- 桌上型電腦 -->
+                <div class="collapse navbar-collapse" id="linkbar">
+                    <div class="navv">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="front.html">關於Dr. kācā</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="howuse.html">如何操作</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="analysis.html">傷口分析</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">附近院所</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="chatplatform.html?themeid=4vgBxENvZOyWcthPQoba">使用者論壇</a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="self" href="self.html">會員資料</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logreg" href="login.html">登入/註冊</a></li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout" href="login.html">登出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">註冊</span>
+                    <form action="#">
+                        <div class="input-field">
+                            <input id="name" type="text" placeholder="請輸入您的姓名" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input id="email" type="text" placeholder="輸入您的電子信箱" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input id="pwd" class="password" placeholder="創建您的密碼" required>
+                            <i class="uil uil-lock icon"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input id="pwd2" type="password" class="password" placeholder="再次輸入密碼" required>
+                            <i class="uil uil-lock icon"></i>
+                            <!-- <i class="uil uil-eye-slash showHidePw"></i> -->
+                        </div>
+
+                        <div class="input-field">
+                            <!-- <input id="birth" class="born" placeholder="yyyy - mm - dd" required> -->
+                            <div class="form-group">                    
+                                <input type="date" id="birthday" class="form-control"  name="birthday">      
+                            </div> 
+                            <i class="uil uil-calender"></i>
+                        </div>
+
+                        <div class="input-field button">
+                            <input id="signup" type="button" value="Signup">
+                        </div>
+
+                        <div class="login-signup">
+                            <span class="text">已經是會員?
+                                <a href="login.html" class="text signup-link">現在就登入吧!</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                <a class="text_footer" href="#">
+                    © 2022 Copyright：Dr. kācā.com
+                </a>
+            </div>
+        </footer>
+
+        <!-- <script src='./js/script.js'></script> -->
+    </body>
+</html>

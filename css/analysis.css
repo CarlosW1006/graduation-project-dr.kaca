@@ -1,0 +1,81 @@
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+.container{
+    padding-top: 120px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+footer{
+    background-color: #9ECDCA;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.text_footer{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.uu {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+.image-area{
+    border: 2px dashed rgb(0, 0, 0);
+    padding: auto;
+    width: 366px;
+    position: relative;
+}
+
+@media (max-width: 600px){
+    .image-area{
+        border: 2px dashed rgb(0, 0, 0);
+        padding: auto;
+        width: 360px;
+        position: relative;
+    }
+}
+
+/* "圖片預覽"置於圖片後方 */
+.image-area img{
+    z-index: 1;
+    position: relative;
+}
+
+.uuu{
+    padding-bottom: 0.25px;
+}
+
+.rrr{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.button{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding-top: 8px;
+}
+
+.button input{
+    height: 120%;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 6px;
+    background-color: #9ECDCA;
+}
+
+.button input:hover{
+    color: #fff;
+    background-color: #41c6bd;
+}
